@@ -1,4 +1,4 @@
-const baskets = [];
+const basket = [];
 const mushrooms = [
   {
     id: 'mushroom1',
@@ -173,7 +173,7 @@ const mushrooms = [
   },
   {
     id: 'mushroom20',
-    name: 'Costas',
+    name: 'Castas',
     description: 'Smooth white head',
     imgUrl: 'https://images.unsplash.com/photo-1570976447609-edbed1eb16d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80',
     isMagic: false,
@@ -182,11 +182,18 @@ const mushrooms = [
   },
 ];
 
+
 const getMushrooms = () => mushrooms;
 
-const getBaskets = () => baskets;
+const getBasket = () => basket;
 
-const pickMushrooms = () => mushrooms;
+const pickMushroom = (mushroomId) => {
+  const randomMushroom = Math.floor(Math.random() * mushrooms.length);
+  const pickedMushroom = mushrooms[randomMushroom];
+  const pickedMushroomIndex = mushrooms.indexOf(pickedMushroom);
+  mushrooms.splice(pickedMushroomIndex, 1);
+  basket.push(pickedMushroom);
+};
 
 
-export default { getMushrooms, getBaskets, pickMushrooms };
+export default { getMushrooms, getBasket, pickMushroom };

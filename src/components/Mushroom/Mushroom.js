@@ -16,14 +16,14 @@ class Mushroom extends React.Component {
   render() {
     const { mushroom } = this.props;
     return (
-      <div className="Mushroom col-3">
+      <div className="Mushroom col-4 mt-3">
         <div className="card">
           <img className="card-img-top" src={mushroom.imgUrl} alt="Mushroom card"/>
           <div className="card-body">
               <h5 className="card-title">{mushroom.name}</h5>
                 <p className="card-text">{mushroom.description}</p>
           </div>
-              <div className="card-footer">
+              {/* <div className="card-footer">
               {
                 mushroom.isMagic ? (
                   <button className="btn btn-danger" onClick={this.freeGoatEvent}>Take a chance</button>
@@ -31,9 +31,10 @@ class Mushroom extends React.Component {
                   <button className="btn btn-dark" onClick={this.useGoatEvent}>Add to Basket</button>
                 )
               }
-              </div>
+              </div> */}
         </div>
       </div>
+
 
     );
   }

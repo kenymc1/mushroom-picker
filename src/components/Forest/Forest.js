@@ -19,7 +19,7 @@ render() {
   ));
 
   return (
-        <div className="Forest d-flex flex-wrap">
+        <div className="Forest col-12 d-flex flex-wrap">
           {buildForest}
         </div>
   );
