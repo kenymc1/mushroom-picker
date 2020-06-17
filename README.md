@@ -5,7 +5,8 @@ Basic App designed to pick random mushrooms and place them in virtual basic.
 
 ## Technology Used
 html, css, react, bootstrap
-## Screenshots
+
+## Screenshots
 ![]https://github.com/kenymc1/mushroom-picker/issues/1#issue-640073775
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
