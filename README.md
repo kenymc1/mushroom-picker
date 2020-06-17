@@ -1,3 +1,13 @@
+# README.md
+
+## Description
+Basic App designed to pick random mushrooms and place them in virtual basic.
+
+## Technology Used
+html, css, react, bootstrap
+## Screenshots
+![]
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
